@@ -3,16 +3,12 @@ pip install -r requirements.txt
 
 
 2、初始化数据库（推荐新方法）
-```
 python manage.py migrate
-```
 
 3、创建管理员账户
-在初始化完数据库之后，需要创建一个管理员账户来管理整个MrDoc，在项目路径下打开命令行终端，运行如下命令：:
+在初始化完数据库之后，需要创建一个管理员账户来登录管理后台，在项目路径下打开命令行终端，运行如下命令：:
+python manage.py createsuperuser
 
-```
- python manage.py createsuperuser
-```
 按照提示输入用户名、电子邮箱地址和密码即可。
 
 4、启动运行
@@ -22,7 +18,6 @@ python manage.py migrate
 方法2：进到项目下直接start.bat启动
 
 
-
-3、退出
+5、退出
 Ctrl+C
 venv\Scripts\deactivate.bat
