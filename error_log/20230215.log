@@ -1,0 +1,5 @@
+【2023-02-15 16:04:01】 【任务id】：2bQ6rEeUX0SaVBMA; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 108, in mscan
+    print ("轮次:"+str(x)+",日志条数:"+str(len(body['data'],timelist_min)))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: len() takes exactly one argument (2 given)

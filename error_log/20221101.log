@@ -1,0 +1,94 @@
+[2022-11-01 17:28:45] 【任务id】：umHGhwFYJbnvjUAp; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 147, in mscan
+    sheet_report.cell(row=n + 1, column=7).value = re.sub(u'\u0000', "", body['data'][m]['message'])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 218, in value
+    self._bind_value(value)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 197, in _bind_value
+    value = self.check_string(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 165, in check_string
+    raise IllegalCharacterError(f"{value} cannot be used in worksheets.")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+openpyxl.utils.exceptions.IllegalCharacterError: Executor Resource Manager error. serviceName 10.10.219.182, data 
+com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 1)): only regular white space (\r, \n, \t) is allowed between tokens
+ at [Source: (String)&quot;\u0001&quot;; line:  cannot be used in worksheets.
+[2022-11-01 17:42:22] 【任务id】：8rvXJwsn9l0kiEhc; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 147, in mscan
+    sheet_report.cell(row=n + 1, column=7).value = re.sub(r'\\u000\d', "", body['data'][m]['message'])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 218, in value
+    self._bind_value(value)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 197, in _bind_value
+    value = self.check_string(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 165, in check_string
+    raise IllegalCharacterError(f"{value} cannot be used in worksheets.")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+openpyxl.utils.exceptions.IllegalCharacterError: Executor Resource Manager error. serviceName 10.10.219.182, data 
+com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 1)): only regular white space (\r, \n, \t) is allowed between tokens
+ at [Source: (String)&quot;&quot;; line:  cannot be used in worksheets.
+[2022-11-01 17:56:07] 【任务id】：5EUqZo1Wd9zSKe6r; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 147, in mscan
+    sheet_report.cell(row=n + 1, column=7).value = re.sub(r'\\u000\d|\\n', "", body['data'][m]['message'])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 218, in value
+    self._bind_value(value)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 197, in _bind_value
+    value = self.check_string(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 165, in check_string
+    raise IllegalCharacterError(f"{value} cannot be used in worksheets.")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+openpyxl.utils.exceptions.IllegalCharacterError: Executor Resource Manager error. serviceName 10.10.219.182, data 
+com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 1)): only regular white space (\r, , \t) is allowed between tokens
+ at [Source: (String)&quot;&quot;; line:  cannot be used in worksheets.
+[2022-11-01 17:58:34] 【任务id】：x7dVaPyNiMSJn0O6; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 147, in mscan
+    sheet_report.cell(row=n + 1, column=7).value = re.sub(r'\\u000\d|\n', "", body['data'][m]['message'])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 218, in value
+    self._bind_value(value)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 197, in _bind_value
+    value = self.check_string(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 165, in check_string
+    raise IllegalCharacterError(f"{value} cannot be used in worksheets.")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+openpyxl.utils.exceptions.IllegalCharacterError: Executor Resource Manager error. serviceName 10.10.219.182, data com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 1)): only regular white space (\r, \n, \t) is allowed between tokens at [Source: (String)&quot;&quot;; line:  cannot be used in worksheets.
+[2022-11-01 18:04:16] 【任务id】：qVzYuR7GQSnv2OAD; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 147, in mscan
+    sheet_report.cell(row=n + 1, column=7).value = re.sub(r'\\u000\d|\&quot', "", body['data'][m]['message'])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 218, in value
+    self._bind_value(value)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 197, in _bind_value
+    value = self.check_string(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 165, in check_string
+    raise IllegalCharacterError(f"{value} cannot be used in worksheets.")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+openpyxl.utils.exceptions.IllegalCharacterError: Executor Resource Manager error. serviceName 10.10.219.182, data 
+com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 1)): only regular white space (\r, \n, \t) is allowed between tokens
+ at [Source: (String);;; line:  cannot be used in worksheets.
+[2022-11-01 18:07:28] 【任务id】：RSWZfzyoCu651PYD; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 147, in mscan
+    sheet_report.cell(row=n + 1, column=7).value = re.sub(r'\\u000\d|\&quot;', "", body['data'][m]['message'])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 218, in value
+    self._bind_value(value)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 197, in _bind_value
+    value = self.check_string(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\cell\cell.py", line 165, in check_string
+    raise IllegalCharacterError(f"{value} cannot be used in worksheets.")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+openpyxl.utils.exceptions.IllegalCharacterError: Executor Resource Manager error. serviceName 10.10.219.182, data 
+com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 1)): only regular white space (\r, \n, \t) is allowed between tokens
+ at [Source: (String); line:  cannot be used in worksheets.

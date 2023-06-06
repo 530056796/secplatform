@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <title>Secplatform</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+	.grid-container {
+	  display: grid;
+	  grid-gap: 1vh 8vw;
+	  grid-template-columns: 1fr 1fr 1fr;
+	  grid-template-rows: 89vh;
+	  background-color: #FFFFFF;
+	  padding: 1vh;
+	}
+	
+	.item1 {
+	  grid-column-start: 1;
+	  grid-column-end: 3;
+	}
+	
+	.star::before{
+		content:"*";
+		color:red;
+	}
+	
+
+</style>
+</head>
+<body>
+
+<div id="content"  >
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="height:6vh" >
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Secplatform</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="../secplatform">首页</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% static 'sectool.html' %}">安全工具</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        安全扫描
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="../taskpage">Monitor SenInfo</a>
+        <a class="dropdown-item" href="#">Second item</a>
+		<a class="dropdown-item" href="#">...</a>
+
+      </div>
+    </li>
+	
+	 <li class="nav-item">
+      <a class="nav-link" href="{% static 'help.html' %}">帮助</a>
+    </li>
+	
+	<!--form class="form-inline" >
+		<input class="form-control" style="float:right" type="text" placeholder="Search">
+		<button class="btn btn-success"  type="button">Search</button>
+	</form-->
+	<li class="nav-item">
+       <a class="nav-link" href="../logout">注销</a>
+    </li>
+		
+  </ul>
+</nav>
+
+<div class="list-group" style="background-color:#EEEEEE;height:91vh;width:160px;float:left;" >
+    <a href="../taskpage" class="list-group-item list-group-item-action">Monitor SenInfo</a>
+    <a href="#" class="list-group-item list-group-item-action">Second item...</a>
+    <a href="#" class="list-group-item list-group-item-action">Third item...</a>
+	<a href="#" class="list-group-item list-group-item-action">Fourth item...</a>
+</div>
+
+<div class="grid-container">
+
+	<form class="item1">
+		<div class="form-group">
+			<label for="text" class="star">任务名称:</label>
+			<input type="text" class="form-control" placeholder="任务名称"  name="taskname" value="{{ taskname }}" required>
+			<div class="invalid-feedback">请输入用户名！</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<label for="text">应用名称:</label>
+				<input type="text" class="form-control"  placeholder="输入AppName" name="appname" value="{{ appname }}">
+			</div>		
+			<div class="col">
+				<label for="text">应用ID:</label>
+				<input type="text" class="form-control" placeholder="输入AppId" name="appid" value="{{ appid }}">
+			</div>
+		</div>
+		<br>	
+		
+		 <div class="row">
+			<div class="col">
+				<label for="text" class="star">日志开始时间:</label>
+				<input type="text" class="form-control"  placeholder="输入日志开始时间" name="starttime"  value="{{ starttime }}" required>
+				<div class="invalid-feedback">请输入开始时间！</div>
+			</div>
+			
+			<div class="col">
+				<label for="text" class="star">日志结束时间:</label>
+				<input type="text" class="form-control" placeholder="输入日志结束时间" name="endtime"  value="{{ endtime }}" required>
+				<div class="invalid-feedback">请输入结束时间！</div>
+			</div>
+		</div>
+		<br>
+		<div class="form-group">
+			<label for="text" class="star">Monitor日志平台地址:</label>
+			<input type="text" class="form-control" placeholder="输入Monitor地址"  name="Murl" value="{{ Murl }}" required>
+			<div class="invalid-feedback">请输入Monitor地址！</div>
+		</div>
+		<div class="form-group">
+			
+			<label for="text" class="star">Auth_Token:</label>
+			<input type="password" class="form-control" placeholder="输入Auth_Token"  name="Auth_Token" value="{{ Auth_Token }}" required>
+			<div class="invalid-feedback">请输入Auth_Token！</div>
+		</div>
+		<div class="form-group">
+			<label for="text" class="star">monitor-csrf-token:</label>
+			<input type="password" class="form-control" placeholder="输入monitor-csrf-token"  name="cftk" value="{{ cftk }}" required>
+			<div class="invalid-feedback">请输入monitor-csrf-token！</div>			
+		</div>		
+		<div class="form-group">
+			<label for="text" class="star">正则表达式:</label>
+			<textarea type="text" class="form-control" placeholder="请输入您要扫描的内容对应的正则表达式，如想扫描搜索关键字passw、secret、token，则可输入passw|secret|token"  name="regex_str"  required>{{ regex_str }}</textarea>
+			<div class="invalid-feedback">请输入正则表达式！</div>		
+		</div>
+			
+
+		<center><input type="button" class="btn btn-sm btn-primary" value="返回" onclick="window.history.back(-1)" /></center>
+		<!--p class="float-right" >&nbsp;&nbsp;</p><center>
+		<a href="../taskpage" class="btn btn-primary btn-sm">取消</a-->
+
+    </form>	
+	
+	<div class="container item2" style="background-color:#EEEEEE">
+		<h6 style="color:red"><br>【提示】：</h6>
+			<h6 style="color:#FF3333">1、扫描特定应用时，切记输入对应"应用名称"</h6>
+			<h6 style="color:#FF3333">2、全量日志扫描时间间隔保持在1小时以内</h6>
+			<p style="color:#606060">扫描全量日志时(不限制"应用名称"或"应用ID"时)，由于应用众多，日志数据量巨大，为避免扫描时间过长，建议扫描的日志时间间隔设置在1小时以内</p>
+			<h6 style="color:#FF3333">3、提交扫描信息前，请检查确保Auth_Token、monitor-csrf-token仍有效，未过期</h6>
+			<h6 style="color:#606060">4、Monitor日志平台地址参考:</h6>
+				<p style="color:#606060;word-break:break-all">patch主干环境：https://feature.kingdee.com:1026/patchhr/monitor/eye/logQuery
+				<br>sit主干环境：https://feature.kingdee.com:1026/feature_sit_hr/monitor/eye/logQuery
+				<br>基线环境：https://feature.kingdee.com:2024/baseline_a/monitor/eye/logQuery
+	        </p>
+			<h6 style="color:#606060">5、全覆盖正则表达式参考:</h6>
+				<p style="color:#606060;word-break:break-all">passw|token|secret|cookie|sessionid|phone|email|\+86|personcard|certificatenumber|+"应用敏感数据key或value"</p>			
+	</div>
+	
+	
+</div>
+
+
+
+<div id="footer" class="bg-dark" style="clear:both;text-align:center;color:#FFFFFF;height:3vh;width:100%">
+版权 © secplatform.com
+</div>
+
+</div>
+
+<script>
+// 如果验证不通过禁止提交表单
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // 获取表单验证样式
+    var forms = document.getElementsByClassName('needs-validation');
+    // 循环并禁止提交
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+ 
+</body>
+</html>

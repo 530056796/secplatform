@@ -1,0 +1,234 @@
+[2022-09-13 10:51:35] 【任务id】：3eUTnswO5cXCgEzh; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 106, in mscan
+    body = json.loads(res.text)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2022-09-13 11:36:20] 【任务id】：npYx4Jm1F093gfvA; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 76, in mscan
+    timelist = scan_test3.t_split(self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 33, in t_split
+    start_time_switch = datetime.datetime.strptime(self.start_time, "%Y-%m-%d %H:%M:%S")
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: time data '2022-09-13T02:36:24Z' does not match format '%Y-%m-%d %H:%M:%S'
+[2022-09-13 11:37:12] 【任务id】：5agkhnfZlmpECKPo; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 76, in mscan
+    timelist = scan_test3.t_split(self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 34, in t_split
+    end_time_switch = datetime.datetime.strptime(self.end_time, "%Y-%m-%d %H:%M:%S")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: time data '2022-09-1310:36:34' does not match format '%Y-%m-%d %H:%M:%S'
+[2022-09-13 11:37:34] 【任务id】：gHIlRvSCeaVxYp4h; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 122, in mscan
+    if 'message' in body['data'][m]:
+                    ~~~~~~~~~~~~^^^
+KeyError: 0
+[2022-09-13 15:30:22] 【任务id】：PUEjFr2qGeVdmuCs; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 172, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2022-09-13 15:31:15] 【任务id】：fJN932G4HvrXgTue; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 172, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2022-09-13 15:55:35] 【任务id】：qzCiSnImRbwj9EA7; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 172, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2022-09-13 15:55:36] 【任务id】：OowDBnpMk6ASEm7U; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 172, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2022-09-13 15:55:42] 【任务id】：TaSjYiFg0uBE5ovO; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 172, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2022-09-13 15:55:50] 【任务id】：teCqhgAnfjVObkux; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 172, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2022-09-13 16:43:30] 【任务id】：yvN9x0SsFZaqQlCu; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 122, in mscan
+    if 'message' in body['data'][m]:
+                    ~~~~~~~~~~~~^^^
+KeyError: 0
+[2022-09-13 17:27:59] 【任务id】：h6OlzkSFTgMxYjW1; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 122, in mscan
+    if 'message' in body['data'][m]:
+                    ~~~~~~~~~~~~^^^
+KeyError: 0
+[2022-09-13 17:32:25] 【任务id】：3log86fTXrqm7jZd; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 188, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Extra data: line 1 column 29521 (char 29520)
+[2022-09-13 17:32:25] 【任务id】：Y4wiVey6W3BkPTxU; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 188, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Extra data: line 1 column 29521 (char 29520)
+[2022-09-13 17:32:26] 【任务id】：dYH7g8GIuwAP2iO3; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 188, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Extra data: line 1 column 29521 (char 29520)
+[2022-09-13 17:32:26] 【任务id】：g3Iv2td9zWUPC7Qy; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 188, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Extra data: line 1 column 29521 (char 29520)
+[2022-09-13 18:11:34] 【任务id】：IQDwnYRfCPTtqM4c; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 122, in mscan
+    if 'message' in body['data'][m]:
+                    ~~~~~~~~~~~~^^^
+KeyError: 0
+[2022-09-13 18:28:53] 【任务id】：QaRqhknU4XO2y6PE; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 188, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Extra data: line 1 column 31026 (char 31025)
+[2022-09-13 18:28:53] 【任务id】：DQrfAGSW2bBwthTL; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 188, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Extra data: line 1 column 31026 (char 31025)
+[2022-09-13 18:28:53] 【任务id】：Rg7I15bJho06CvVN; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 188, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Extra data: line 1 column 31026 (char 31025)
+[2022-09-13 18:28:54] 【任务id】：pHl6AQoaxtF0BySk; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 188, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Extra data: line 1 column 31026 (char 31025)

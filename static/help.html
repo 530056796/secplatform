@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secplatform</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+	.grid-container {
+	  display: grid;
+	  grid-gap: 1vh;
+	  grid-template-columns: 1fr 1fr 1fr 1fr;	  
+	  grid-template-rows: 23vh 35vh 31vh;
+	  padding: 0px;
+	}
+	
+	.item2 {
+	  grid-column-start: 2;
+	  grid-column-end: 4;
+	}
+	
+	.item5 {
+	  background-color: rgba(83, 106, 153);
+	}
+
+	.item6 {
+	  background-color: rgba(62, 66, 85);
+	}
+
+</style>
+</head>
+<body>
+
+<div id="content"  >
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="height:6vh" >
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Secplatform</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav" >
+    <li class="nav-item">
+      <a class="nav-link" style="float:left" href="../secplatform">首页</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../static/sectool.html">安全工具</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        安全扫描
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="../taskpage">Monitor SenInfo</a>
+        <a class="dropdown-item" href="#">Second item</a>
+		<a class="dropdown-item" href="#">...</a>
+
+      </div>
+    </li>
+	
+	<li class="nav-item">
+		<a class="nav-link" href="../static/help.html">帮助</a>
+    </li>
+	
+	
+	<!--form class="form-inline float-right" >
+		<input class="form-control float-right" style="float:right" type="text" placeholder="Search">
+		<button class="btn btn-success float-right"  type="button">Search</button>
+	</form-->
+	
+	<li class="nav-item">
+        <a class="nav-link" href="../logout">注销</a>
+    </li>
+	
+  </ul>
+</nav>
+
+<div class="list-group" style="background-color:#EEEEEE;height:91vh;width:160px;float:left;" >
+    <a href="../taskpage" class="list-group-item list-group-item-action">Monitor SenInfo</a>
+    <a href="#" class="list-group-item list-group-item-action">Second item...</a>
+    <a href="#" class="list-group-item list-group-item-action">Third item...</a>
+	<a href="#" class="list-group-item list-group-item-action">Fourth item...</a>
+</div>
+
+<div class="grid-container">
+
+		<div class="item1"></div>
+		<div class="item2" align="center" ><h5 style="position:relative;bottom:-15vh">为帮助您快速使用应用服务，为您准备了下列内容，欢迎查阅！</h5></div>
+		<div class="item3"></div>  
+		<div class="item4"></div>
+		<div class="item5" style="color:#ffffff"><br><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;操作指引</h5>
+		<ul style="list-style-type:disc">
+			 <li><a href="Monitor SenInfo扫描操作指南.docx	" style="color:#ffffff">Monitor SenInfo扫描操作指南下载</a></li>
+		</ul>  
+		</div>
+
+		<div class="item6" style="color:#ffffff"><br><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持</h5>
+		<ul style="list-style-type:disc">
+			 <li style="color:#ffffff">使用中如遇服务故障，可联系技术支持人员，工号52491</li>
+
+		</ul>  
+		</div>
+		<div class="item7"></div>
+		<div class="item8"></div>
+		<div class="item8"></div>  
+		<div class="item8"></div>  
+		<div class="item8"></div>  
+   
+
+
+    <!--div class="card" style="height:400px;width:400px">
+		<img class="card-img-top" src="{% static '6ae6446a339f0dd3377b2754e13f0336.jpeg' %}" alt="Card image" style="height:200px;width:400px">
+		<div class="card-body">
+		  <h4 class="card-title">Monitor SenInfo</h4>
+		  <p class="card-text">此项扫描主要对Monitor平台打印的日志进行排查是否存在信息，隐私泄露等问题</p>
+		  <a href="../taskpage" class="btn btn-primary">get into</a>
+		</div>
+	</div>
+	
+	<div class="card" style="height:400px;width:400px">
+		<img class="card-img-top" src="{% static '14147f2a3e0d971b81d388f6fc66e655.gif' %}" alt="Card image" style="height:200px;width:400px">
+		<div class="card-body">
+		  <h4 class="card-title">Second Scan</h4>
+		  <p class="card-text">Some example text some example text. Second Scan is an architect and engineer</p>
+		  <a href="#" class="btn btn-primary">get into</a>
+		</div>
+	</div>
+	
+	<div class="card" style="height:400px;width:400px">
+		<img class="card-img-top" src="{% static '3c39b53ef24cddd9259c2143755de086.gif' %}" alt="Card image" style="height:200px;width:400px">
+		<div class="card-body">
+		  <h4 class="card-title">Third Scan</h4>
+		  <p class="card-text">Some example text some example text. Third Scan is an engineer</p>
+		  <a href="#" class="btn btn-primary">get into</a>
+		</div>
+	</div>
+	
+	<div class="card" style="height:400px;width:400px">
+		<img class="card-img-top" src="{% static 'e81af35e4bad4cec4fa481e6b58cad1e.jpeg' %}" alt="Card image" style="height:200px;width:400px">
+		<div class="card-body">
+		  <h4 class="card-title">fourth Scan</h4>
+		  <p class="card-text">Some example text some example text. fourth Scan is an engineer</p>
+		  <a href="#" class="btn btn-primary">get into</a>
+		</div>
+	</div-->
+	
+
+</div>
+
+<div id="footer" class="bg-dark" style="clear:both;text-align:center;color:#FFFFFF;height:3vh;width:100%">
+版权 © secplatform.com
+</div>
+
+</div>
+ 
+</body>
+</html>

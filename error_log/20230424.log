@@ -1,0 +1,11 @@
+【2023-04-24 16:21:31】 【任务id】：bwMaZqKRHuCIx7ek; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 132, in mscan
+    sheet_report.cell(row=n + 1, column=1).value = n
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\worksheet\worksheet.py", line 240, in cell
+    cell = self._get_cell(row, column)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\openpyxl\worksheet\worksheet.py", line 253, in _get_cell
+    raise ValueError("Row numbers must be between 1 and 1048576")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Row numbers must be between 1 and 1048576

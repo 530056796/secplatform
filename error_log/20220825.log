@@ -1,0 +1,5 @@
+[2022-08-25 19:25:03] 任务id：5bBSXIca96FEJZvR error：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 122, in mscan
+    if 'message' in body['data'][m]:
+                    ~~~~~~~~~~~~^^^
+KeyError: 0

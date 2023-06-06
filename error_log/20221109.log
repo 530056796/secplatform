@@ -1,0 +1,14 @@
+【2022-11-09 18:30:36】 【任务id】：gu3EjTL4lItvG871; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 107, in mscan
+    body = json.loads(res.text)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

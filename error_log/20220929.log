@@ -1,0 +1,38 @@
+[2022-09-29 11:40:25] 【任务id】：mXVWstcuG5gLhFSR; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 122, in mscan
+    if 'message' in body['data'][m]:
+                    ~~~~~~~~~~~~^^^
+KeyError: 0
+[2022-09-29 14:18:42] 【任务id】：CVSWzPFTvk8tXJ09; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 188, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Extra data: line 1 column 31537 (char 31536)
+[2022-09-29 14:18:42] 【任务id】：xtSCJHZLD28MhXIq; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 188, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Extra data: line 1 column 31537 (char 31536)
+[2022-09-29 14:29:29] 【任务id】：eNOPHAEYScXvMF91; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 188, in mscan
+    taskinfo_scan = json.loads(content)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Extra data: line 1 column 31538 (char 31537)

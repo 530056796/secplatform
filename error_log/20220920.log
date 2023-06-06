@@ -1,0 +1,76 @@
+[2022-09-20 15:29:16] 【任务id】：wKuoerfxbCTd2qFX; 【ERROR】：Traceback (most recent call last):
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 3, in raise_from
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\http\client.py", line 1374, in getresponse
+    response.begin()
+    ^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\http\client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\http\client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\ssl.py", line 1277, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\ssl.py", line 1133, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Python311\Lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+    ^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+    ^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='feature.kingdee.com', port=1026): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan\MScan\scan_test3.py", line 101, in mscan
+    res = requests.post(self.url,verify=False,json=payload,headers=headers,timeout=10)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\adapters.py", line 578, in send
+    raise ReadTimeout(e, request=request)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='feature.kingdee.com', port=1026): Read timed out. (read timeout=10)

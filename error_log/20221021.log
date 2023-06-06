@@ -1,0 +1,138 @@
+[2022-10-21 09:44:52] 【任务id】：bjyJVWxNmO849Biz; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 111, in mscan
+    pattern = re.compile(self.regex_str,re.I)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\re.py", line 232, in compile
+    return _compile(pattern, flags)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\re.py", line 284, in _compile
+    p = sre_compile.compile(pattern, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\sre_compile.py", line 764, in compile
+    p = sre_parse.parse(p, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\sre_parse.py", line 948, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\sre_parse.py", line 443, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\sre_parse.py", line 668, in _parse
+    raise source.error("nothing to repeat",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+re.error: nothing to repeat at position 0
+[2022-10-21 14:08:01] 【任务id】：lnVX7ybvAct3Deoj; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 133, in mscan
+    sheet_report.cell(row=n + 1, column=3).value = body['data'][m]['className']
+                                                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'className'
+[2022-10-21 14:12:52] 【任务id】：5OPfMBYLeAmrhV8R; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 108, in mscan
+    print ("轮次:"+str(x)+",日志条数:"+str(len(body['data'])))
+                                         ~~~~^^^^^^^^
+KeyError: 'data'
+[2022-10-21 14:15:33] 【任务id】：pFC2JtVhTPogjdms; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 133, in mscan
+    sheet_report.cell(row=n + 1, column=3).value = body['data'][m]['className']
+                                                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'className'
+[2022-10-21 14:22:57] 【任务id】：l2yXJ0LTHWQxkZO3; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 108, in mscan
+    print ("轮次:"+str(x)+",日志条数:"+str(len(body['data'])))
+                                         ~~~~^^^^^^^^
+KeyError: 'data'
+[2022-10-21 15:11:32] 【任务id】：M2plz1PF34vyh7O0; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 123, in mscan
+    if 'message' in body['data'][m]:
+                    ~~~~~~~~~~~~^^^
+KeyError: 0
+[2022-10-21 15:12:52] 【任务id】：juMzPAQ09Sa5qiYI; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 108, in mscan
+    print ("轮次:"+str(x)+",日志条数:"+str(len(body['data'])))
+                                         ~~~~^^^^^^^^
+KeyError: 'data'
+[2022-10-21 15:13:58] 【任务id】：que5ofKCN0xJ1rg6; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 108, in mscan
+    print ("轮次:"+str(x)+",日志条数:"+str(len(body['data'])))
+                                         ~~~~^^^^^^^^
+KeyError: 'data'
+[2022-10-21 15:14:15] 【任务id】：dPgWwpvHY2Z3M0ta; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 108, in mscan
+    print ("轮次:"+str(x)+",日志条数:"+str(len(body['data'])))
+                                         ~~~~^^^^^^^^
+KeyError: 'data'
+[2022-10-21 15:14:48] 【任务id】：QJ294LTIiq50jmvG; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 108, in mscan
+    print ("轮次:"+str(x)+",日志条数:"+str(len(body['data'])))
+                                         ~~~~^^^^^^^^
+KeyError: 'data'
+[2022-10-21 15:34:13] 【任务id】：oeYEPrwsAp2VGgCd; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 133, in mscan
+    sheet_report.cell(row=n + 1, column=3).value = body['data'][m]['className']
+                                                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'className'
+[2022-10-21 15:38:13] 【任务id】：vL9BEPmGHet8CKjF; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 133, in mscan
+    sheet_report.cell(row=n + 1, column=3).value = body['data'][m]['className']
+                                                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'className'
+[2022-10-21 15:52:00] 【任务id】：t2oSAGPanXkzWRIV; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 133, in mscan
+    sheet_report.cell(row=n + 1, column=3).value = body['data'][m]['className']
+                                                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'className'
+[2022-10-21 15:53:18] 【任务id】：I5VijmHxwkYvCo6D; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 133, in mscan
+    sheet_report.cell(row=n + 1, column=3).value = body['data'][m]['className']
+                                                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'className'
+[2022-10-21 15:56:52] 【任务id】：Bg2UxL4nvz6JyQGM; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 133, in mscan
+    sheet_report.cell(row=n + 1, column=3).value = body['data'][m]['className']
+                                                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'className'
+[2022-10-21 15:58:27] 【任务id】：vo5GMQsJyDuK8wag; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 133, in mscan
+    sheet_report.cell(row=n + 1, column=3).value = body['data'][m]['className']
+                                                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'className'
+[2022-10-21 19:25:41] 【任务id】：FxivkgGERhwTVLyf; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 133, in mscan
+    sheet_report.cell(row=n + 1, column=3).value = body['data'][m]['className']
+                                                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'className'
+[2022-10-21 19:33:17] 【任务id】：LfdM3AaTWlYwGrNI; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 133, in mscan
+    print(body['data'][m]['className'])
+          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'className'
+[2022-10-21 19:35:50] 【任务id】：n8XK751qeykMOrEj; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 134, in mscan
+    sheet_report.cell(row=n + 1, column=3).value = body['data'][m]['className']
+                                                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'className'
+[2022-10-21 19:49:39] 【任务id】：DhKgE80mPUX1eRbS; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 134, in mscan
+    sheet_report.cell(row=n + 1, column=3).value = body['data'][m]['className']
+                                                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'className'
+[2022-10-21 20:00:57] 【任务id】：fPSE57eKlcN3m8CH; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 134, in mscan
+    sheet_report.cell(row=n + 1, column=3).value = body['data'][m]['className']
+                                                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'className'
+[2022-10-21 20:18:26] 【任务id】：M9IrQdBH5NcYqnt7; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 134, in mscan
+    if not body['data'][m]['className']:
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'className'
+[2022-10-21 20:21:13] 【任务id】：qasSCFxNVX9TG2od; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 139, in mscan
+    sheet_report.cell(row=n + 1, column=5).value = body['data'][m]['line']
+                                                   ~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'line'
+[2022-10-21 20:27:01] 【任务id】：GH3TL6FhfnlwZyvs; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 108, in mscan
+    print ("轮次:"+str(x)+",日志条数:"+str(len(body['data'])))
+                                         ~~~~^^^^^^^^
+KeyError: 'data'

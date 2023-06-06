@@ -1,0 +1,393 @@
+[2022-10-19 16:35:25] 【任务id】：qeVbrZpoTsSJC6aj; 【ERROR】：Traceback (most recent call last):
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 994, in _prepare_proxy
+    conn.connect()
+    ^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connection.py", line 364, in connect
+    self.sock = conn = self._connect_tls_proxy(hostname, conn)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connection.py", line 499, in _connect_tls_proxy
+    socket = ssl_wrap_socket(
+             ^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\ssl.py", line 516, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\ssl.py", line 1074, in _create
+    self.do_handshake()
+    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\ssl.py", line 1345, in do_handshake
+    self._sslobj.do_handshake()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: _ssl.c:975: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Python311\Lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='feature.kingdee.com', port=2024): Max retries exceeded with url: /baseline_a/monitor/eye/logQuery (Caused by ProxyError('Cannot connect to proxy.', TimeoutError('_ssl.c:975: The handshake operation timed out')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 102, in mscan
+    res = requests.post(self.url,verify=False,json=payload,headers=headers,timeout=30)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\adapters.py", line 559, in send
+    raise ProxyError(e, request=request)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='feature.kingdee.com', port=2024): Max retries exceeded with url: /baseline_a/monitor/eye/logQuery (Caused by ProxyError('Cannot connect to proxy.', TimeoutError('_ssl.c:975: The handshake operation timed out')))
+[2022-10-19 16:41:10] 【任务id】：VRh3DZOkMoe25xTA; 【ERROR】：Traceback (most recent call last):
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 994, in _prepare_proxy
+    conn.connect()
+    ^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connection.py", line 364, in connect
+    self.sock = conn = self._connect_tls_proxy(hostname, conn)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connection.py", line 499, in _connect_tls_proxy
+    socket = ssl_wrap_socket(
+             ^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\ssl.py", line 516, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\ssl.py", line 1074, in _create
+    self.do_handshake()
+    ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\ssl.py", line 1345, in do_handshake
+    self._sslobj.do_handshake()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: _ssl.c:975: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Python311\Lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='feature.kingdee.com', port=2024): Max retries exceeded with url: /baseline_a/monitor/eye/logQuery (Caused by ProxyError('Cannot connect to proxy.', TimeoutError('_ssl.c:975: The handshake operation timed out')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 102, in mscan
+    res = requests.post(self.url,verify=False,json=payload,headers=headers,timeout=30)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\adapters.py", line 559, in send
+    raise ProxyError(e, request=request)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='feature.kingdee.com', port=2024): Max retries exceeded with url: /baseline_a/monitor/eye/logQuery (Caused by ProxyError('Cannot connect to proxy.', TimeoutError('_ssl.c:975: The handshake operation timed out')))
+[2022-10-19 16:42:37] 【任务id】：sdQNefCGTtz5IVnZ; 【ERROR】：Traceback (most recent call last):
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 3, in raise_from
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\http\client.py", line 1374, in getresponse
+    response.begin()
+    ^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\http\client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\http\client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\ssl.py", line 1277, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\ssl.py", line 1133, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Python311\Lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+    ^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+    ^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='feature.kingdee.com', port=2024): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 102, in mscan
+    res = requests.post(self.url,verify=False,json=payload,headers=headers,timeout=30)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\adapters.py", line 578, in send
+    raise ReadTimeout(e, request=request)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='feature.kingdee.com', port=2024): Read timed out. (read timeout=30)
+[2022-10-19 16:53:25] 【任务id】：bR1mvieO6Uj0xWnF; 【ERROR】：Traceback (most recent call last):
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 3, in raise_from
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\http\client.py", line 1374, in getresponse
+    response.begin()
+    ^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\http\client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\http\client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\ssl.py", line 1277, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\ssl.py", line 1133, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Python311\Lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+    ^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+    ^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='feature.kingdee.com', port=2024): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 102, in mscan
+    res = requests.post(self.url,verify=False,json=payload,headers=headers,timeout=30)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\adapters.py", line 578, in send
+    raise ReadTimeout(e, request=request)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='feature.kingdee.com', port=2024): Read timed out. (read timeout=30)
+[2022-10-19 17:01:02] 【任务id】：GZ4DHykOU5x3qtru; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 77, in mscan
+    timelist = scan_test3.t_split(self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 34, in t_split
+    start_time_switch = datetime.datetime.strptime(self.start_time, "%Y-%m-%d %H:%M:%S")
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\_strptime.py", line 352, in _strptime
+    raise ValueError("unconverted data remains: %s" %
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: unconverted data remains: 6
+[2022-10-19 17:11:25] 【任务id】：VBDO1zU7N82ZCaf4; 【ERROR】：Traceback (most recent call last):
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 3, in raise_from
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\http\client.py", line 1374, in getresponse
+    response.begin()
+    ^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\http\client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\http\client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\ssl.py", line 1277, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\ssl.py", line 1133, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Python311\Lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+    ^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+    ^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='feature.kingdee.com', port=2024): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 102, in mscan
+    res = requests.post(self.url,verify=False,json=payload,headers=headers,timeout=30)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\site-packages\requests\adapters.py", line 578, in send
+    raise ReadTimeout(e, request=request)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='feature.kingdee.com', port=2024): Read timed out. (read timeout=30)
+[2022-10-19 17:16:26] 【任务id】：uwxkmOd15WAiBtpR; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 107, in mscan
+    body = json.loads(res.text)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2022-10-19 17:36:09] 【任务id】：PNVzBYH5Iy8uMSCQ; 【ERROR】：Traceback (most recent call last):
+  File "D:\安全\自研工具\seninfo\MScan20220831\MScan\scan_test3.py", line 108, in mscan
+    print ("轮次:"+str(x)+",日志条数:"+str(len(body['data'])))
+                                         ~~~~^^^^^^^^
+KeyError: 'data'
